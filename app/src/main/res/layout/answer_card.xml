@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/isTrue"
+            android:layout_width="42dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center|end"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|end"
+            android:scaleX="1.5"
+            android:scaleY="1.5" />
+
+        <EditText
+            android:id="@+id/context"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textNoSuggestions"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="X" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

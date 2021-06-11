@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz.Fragment.SettingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/botron"
+            android:text="Delete"
+            app:layout_constraintStart_toEndOf="@+id/confirm"
+            app:layout_constraintTop_toBottomOf="@+id/QDes" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:background="@drawable/botron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="25dp"
+            android:text="Confirm"
+            app:layout_constraintStart_toStartOf="@+id/QDes"
+            app:layout_constraintTop_toBottomOf="@+id/QDes" />
+
+        <Switch
+            android:id="@+id/state"
+            android:layout_width="114dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="192dp"
+            android:layout_marginLeft="192dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/botron4"
+            android:text="Public"
+            app:layout_constraintBottom_toBottomOf="@+id/Qname"
+            app:layout_constraintStart_toStartOf="@+id/Qname" />
+
+        <EditText
+            android:id="@+id/Qname"
+            android:layout_width="144dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/botron4"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/Qcount"
+            android:background="@drawable/botron4"
+            android:layout_width="137dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="Q per test"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/Qname"
+            app:layout_constraintTop_toBottomOf="@+id/Qname" />
+
+        <EditText
+            android:id="@+id/Qtime"
+            android:layout_width="129dp"
+            android:background="@drawable/botron4"
+            android:layout_height="45dp"
+            android:layout_marginStart="185dp"
+            android:layout_marginLeft="185dp"
+            android:ems="10"
+            android:hint="Time per Q"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/Qcount"
+            app:layout_constraintTop_toTopOf="@+id/Qcount" />
+
+        <EditText
+            android:id="@+id/QDes"
+            android:layout_width="329dp"
+            android:layout_height="301dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginBottom="111dp"
+            android:background="@drawable/botron4"
+            android:ems="10"
+            android:hint="Description"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

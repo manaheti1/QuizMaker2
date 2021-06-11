@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz.Fragment.TestFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/testing"
+            android:layout_width="291dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="152dp"
+            android:background="@drawable/botron"
+            android:text="Test"
+            app:layout_constraintStart_toStartOf="@+id/Quiztime"
+            app:layout_constraintTop_toBottomOf="@+id/Quiztime" />
+
+        <Button
+            android:id="@+id/training"
+            android:layout_width="293dp"
+            android:background="@drawable/botron"
+            android:layout_height="70dp"
+            android:layout_marginTop="21dp"
+
+            android:text="Train"
+            app:layout_constraintStart_toStartOf="@+id/testing"
+            app:layout_constraintTop_toBottomOf="@+id/testing" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="309dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="86dp"
+            android:background="@drawable/botron4"
+            android:text="Total Questions: "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/testnum"
+            android:layout_width="309dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/botron4"
+            android:text="Question"
+            app:layout_constraintStart_toStartOf="@+id/total"
+            app:layout_constraintTop_toBottomOf="@+id/total" />
+
+        <TextView
+            android:id="@+id/Quiztime"
+            android:layout_width="309dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/botron4"
+            android:text="Time per test: "
+            app:layout_constraintStart_toStartOf="@+id/testnum"
+            app:layout_constraintTop_toBottomOf="@+id/testnum" />
+
+        <EditText
+            android:id="@+id/questionpertrain"
+            android:layout_width="309dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/botron4"
+            android:ems="10"
+            android:hint="Number of question per Train"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/Quiztime"
+            app:layout_constraintTop_toBottomOf="@+id/Quiztime" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
